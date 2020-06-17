@@ -11,21 +11,15 @@ function getInput(i) {
 const color1 = getInput(0);
 const color2 = getInput(1);
 
+  if (!color1) {
+    console.log( 'you need to enter a color')
+  }
 
-function result() {
-  if (color1 === undefined) {
-    return 'you need to enter a color'
+  if (!color2) {
+    console.log(colorDeconstructor(color1))
   }
-  if (color2 === undefined) {
-    const deconstructor = colorDeconstructor(color1)
-    return deconstructor;
-  }
-  else {
-    const combinator = colorCombinator(color1,color2)
-    return combinator;
-  }
-}
 
-const printResult = result()
-console.log(printResult) 
+  if (color1, color2) {
+    console.log(colorCombinator(color1,color2))
+  }
 
