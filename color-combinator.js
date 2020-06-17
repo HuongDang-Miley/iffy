@@ -15,20 +15,19 @@ function colorCombinator(color1, color2) {
   }
 
   let answer = '';
-  if (color1 === 'red' && color2 === 'yellow') {
+  if (color1 === 'red' && color2 === 'yellow' || color1 === 'yellow' && color2 === 'red') {
     answer = 'orange';
   }
 
-  if (color1 === 'red' && color2 === 'blue') {
+  if (color1 === 'red' && color2 === 'blue' || color1 === 'blue' && color2 === 'red') {
     answer = 'purple';
   }
 
-  if (color1 === 'yellow' && color2 === 'blue') {
+  if (color1 === 'yellow' && color2 === 'blue' || color1 === 'blue' && color2 === 'yellow') {
     answer = 'green';
   }
 
   return 'When you combine ' + color1 + ' and ' + color2 + ', you get ' + answer + '!';
 }
-
 
 module.exports = colorCombinator;
